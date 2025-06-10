@@ -1,5 +1,5 @@
 import TodoForm from "./TodoForm.tsx";
-import {useReducer} from "react";
+import {useReducer, useState} from "react";
 import TodoList from "./TodoList.tsx";
 
 type TodoProps = {
@@ -28,7 +28,9 @@ const todoReducer = (state:TodoProps[], action: Action): TodoProps[] => {
 
 const Todo = () => {
     const [todos, dispatch] = useReducer(todoReducer, []);
-    console.log(todos);
+
+    const [todos, setTodos] = useState([]);
+
 
     return  (
         <>
