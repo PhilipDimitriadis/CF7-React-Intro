@@ -5,7 +5,7 @@
 // import ArrowFunctionalComponentWithPropsType from "./components/ArrowFunctionalComponentWithPropsType.tsx";
 // import Layout from "./components/Layout.tsx";
 import {BrowserRouter, Route, Routes} from "react-router";
-import HomePage from "./pages/HomePage.tsx";
+// import HomePage from "./pages/HomePage.tsx";
 import NameChangerPage from "./pages/NameChangerPage.tsx";
 // import Layout from "./components/Layout.tsx";
 import OnlineStatusPage from "./pages/OnlineStatusPage.tsx";
@@ -15,6 +15,7 @@ import ExamplesPage from "./pages/ExamplesPage.tsx";
 import RouterExamplesLayout from "./components/RouterExamplesLayout.tsx";
 import AutoRedirectPage from "./pages/AutoRedirectPage.tsx";
 import NotFoundPage from "./pages/NotFoundPage.tsx";
+import FocusInput from "./components/FocusInput.tsx";
 // import OnlineStatus from "./components/OnlineStatus.tsx";
 // import CounterAdvanced from "./components/CounterAdvanced.tsx";
 // import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
@@ -58,11 +59,11 @@ function App() {
         {/*</Layout>*/}
 
         <BrowserRouter>
-            {/*<Layout>*/}
                 <Routes>
                     {/*<Route path="/" element={<HomePage/>} />*/}
                     <Route element={<RouterLayout/>}>
-                        <Route index element={<HomePage />}/>
+                        {/*<Route index element={<HomePage />}/>*/}
+                        <Route index element={<FocusInput/>}/>
                     </Route>
                     {/*<Route path="examples?" >*/}
                     <Route path="examples" element={<RouterExamplesLayout/>}>
@@ -76,7 +77,6 @@ function App() {
                     {/*<Route path="files/*" element={<FilePage/>}/>*/}
                     <Route path="*" element={<NotFoundPage/>}/>
                 </Routes>
-            {/*</Layout>*/}
 
         </BrowserRouter>
     </>
