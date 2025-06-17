@@ -1,7 +1,10 @@
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 
 const NameChanger = () => {
     const [name, setName] = useState("");
+
+    const ref = useRef(0);
+    ref.current = 0
 
     // const setup = () => {
     //     document.title = name ? `Hello, ${name}!` : "Hello, Stranger!";
