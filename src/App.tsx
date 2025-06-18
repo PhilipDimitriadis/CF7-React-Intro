@@ -17,6 +17,8 @@ import AutoRedirectPage from "./pages/AutoRedirectPage.tsx";
 import NotFoundPage from "./pages/NotFoundPage.tsx";
 // import FocusInput from "./components/FocusInput.tsx";
 import UncontrolledInput from "./components/UncontrolledInput.tsx";
+import ControlledInput from "./components/ControlledInput.tsx";
+import MultiFieldForm from "./components/MultiFieldForm.tsx";
 // import OnlineStatus from "./components/OnlineStatus.tsx";
 // import CounterAdvanced from "./components/CounterAdvanced.tsx";
 // import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
@@ -64,8 +66,8 @@ function App() {
                     {/*<Route path="/" element={<HomePage/>} />*/}
                     <Route element={<RouterLayout/>}>
                         {/*<Route index element={<HomePage />}/>*/}
+                        <Route index element={<MultiFieldForm/>}/>
                         {/*<Route index element={<FocusInput/>}/>*/}
-                        <Route index element={<UncontrolledInput/>}/>
                     </Route>
                     {/*<Route path="examples?" >*/}
                     <Route path="examples" element={<RouterExamplesLayout/>}>
@@ -73,6 +75,9 @@ function App() {
                         <Route path="name-changer" element={<NameChangerPage/>}/>
                         <Route path="online-status" element={<OnlineStatusPage/>}/>
                         <Route path="auto-redirect" element={<AutoRedirectPage/>}/>
+                        <Route path="cotrolled-input" element={<ControlledInput/>}/>
+                        <Route path="uncotrolled-input" element={<UncontrolledInput/>}/>
+
                     </Route>
                     <Route path="users/:usersId" element={<UserPage/>}/>
                     <Route path="users" element={<UserPage/>}/>
