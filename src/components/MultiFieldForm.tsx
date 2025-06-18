@@ -47,7 +47,7 @@ const MultiFieldForm = () => {
                         value={values.name}
                         placeholder="Name"
                         onChange={handleChange}
-                        className="px-4 py-2 rounded border "
+                        className="w-full px-4 py-2 rounded border "
                         required
                     />
                     <input
@@ -56,7 +56,7 @@ const MultiFieldForm = () => {
                         value={values.email}
                         placeholder="Email"
                         onChange={handleChange}
-                        className="px-4 py-2 rounded border "
+                        className="w-full px-4 py-2 rounded border "
                         required
                     />
                     <textarea
@@ -64,7 +64,8 @@ const MultiFieldForm = () => {
                         value={values.message}
                         placeholder="Type your message"
                         onChange={handleChange}
-                        className="px-4 py-2 rounded border "
+                        className="w-full px-4 py-2 rounded border "
+                        minLength={5}
                         required
                     ></textarea>
                     <div className="flex gap-4">
