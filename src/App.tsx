@@ -20,7 +20,8 @@ import UncontrolledInput from "./components/UncontrolledInput.tsx";
 import ControlledInput from "./components/ControlledInput.tsx";
 // import MultiFieldForm from "./components/MultiFieldForm.tsx";
 // import MultiFieldFormWithValidation from "./components/MultiFieldFormWithValidation.tsx";
-import MultiFieldFormWithZodValidation from "./components/MultiFieldFormWithZodValidation.tsx";
+// import MultiFieldFormWithZodValidation from "./components/MultiFieldFormWithZodValidation.tsx";
+import MultiFieldFormWithReactHook from "./components/MultiFieldFormWithReactHook.tsx";
 // import OnlineStatus from "./components/OnlineStatus.tsx";
 // import CounterAdvanced from "./components/CounterAdvanced.tsx";
 // import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
@@ -69,7 +70,8 @@ function App() {
                     <Route element={<RouterLayout/>}>
                         {/*<Route index element={<HomePage />}/>*/}
                         {/*<Route index element={<MultiFieldFormWithValidation/>}/>*/}
-                        <Route index element={<MultiFieldFormWithZodValidation/>}/>
+                        {/*<Route index element={<MultiFieldFormWithZodValidation/>}/>*/}
+                        <Route index element={<MultiFieldFormWithReactHook/>}/>
                         {/*<Route index element={<FocusInput/>}/>*/}
                     </Route>
                     {/*<Route path="examples?" >*/}
